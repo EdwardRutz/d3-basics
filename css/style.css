@@ -6,19 +6,37 @@ html {
 }
 body {
     margin-bottom: 60px; /* Margin bottom by footer height */
+    height: 100%;
+}
+
+.center{
+    margin: auto;
+    /*width: 600px;*/
+    padding: 20px;
+}
+
+/* ----- SECTIONS -----*/
+
+.main {
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    background-color: ;
 }
 
 
-
-
 /* ----- FOOTER -----*/
-
-.footer {
+/* TODO: Fix the footer width??? */
+footer {
     position: absolute;
-    bottom: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 10px;
     width: 100%;
     height: 60px; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 30px; /* Vertically center the text there */
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: #dcdcdc;
+}
 }
