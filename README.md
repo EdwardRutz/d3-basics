@@ -16,10 +16,18 @@
   <circle cx="90" cy="25" r="25" fill="red"></cirle>
 </svg>
 ```
-
-
+- To confirm your data, log it to the console.log before writing code.
+- When getting data from text files, numbers are set as strings so convert them to numbers.
+  - One way to convert into a number is by using an unary operator (+) before the string.
+    - ` +"10.00"  //10 `
+     ```
+        data.foreach((d) => {
+            d.age = +d.age;
+        }
+    ```
 
 
 ## More Information
 
 - [Udemy: Mastering data visualization in D3.js](https://www.udemy.com/course/masteringd3js/)
+- [Converting Strings to Numbers](https://flaviocopes.com/how-to-convert-string-to-number-javascript/)
