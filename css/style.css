@@ -22,7 +22,6 @@ body {
     height: 400px;
     width: 400px;
     padding: 30px;
-    background-color: ;
 }
 
 
@@ -38,5 +37,4 @@ footer {
     line-height: 30px; /* Vertically center the text there */
     text-align: center;
     background-color: #dcdcdc;
-}
 }
