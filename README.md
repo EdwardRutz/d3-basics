@@ -26,7 +26,8 @@
             d.age = +d.age;
         }
     ```
-
+- "Scales are functions that map from an **input domain** to an **output range**."  ~ Mike Bostock
+- Ordinal scales:  use for discrete data rather than continous data.  Use when assigning categories a color.
 
 ## More Information
 
