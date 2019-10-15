@@ -28,6 +28,11 @@
     ```
 - "Scales are functions that map from an **input domain** to an **output range**."  ~ Mike Bostock
 - Ordinal scales:  use for discrete data rather than continous data.  Use when assigning categories a color.
+  - D3 includes color themes to use with color scales so picking out all the colors to use is not needed.
+- Band scales are used for bar charts.  The space out different categories of the chart.
+
+
+
 
 ## More Information
 
