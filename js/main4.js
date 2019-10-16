@@ -1,6 +1,5 @@
 /*
-* /main4.js
-* Data Visualization with D3.js
+* Band Scales
 */
 
 var svg = d3.select("#chart-area")
@@ -15,8 +14,18 @@ d3.json("data/buildings.json").then(function(data){
     d.height = +d.height;
   });
 
+  const x = d3.scaleBand()
+    .domain(data.map((d) => {
+      return d.name;
+    }))
+    .range([0,400])
+    .paddingInner(0.3)
+    .paddingOuter(0.3);
+
   var y = d3.scaleLinear()
-    .domain([0, 828])
+    .domain([0, d3.max(data, (d) => {
+      return d.height;
+    })])
     .range([0, 400]);
 
   var rects = svg.selectAll("rect")
@@ -24,10 +33,10 @@ d3.json("data/buildings.json").then(function(data){
     .enter()
     .append("rect")
     .attr("y", 0)
-    .attr("x", function(d, i){
-      return (i * 60);
+    .attr("x", (d, i) => {
+      return x(d.name);
     })
-    .attr("width", 40)
+    .attr("width", x.bandwidth)
     .attr("height", function(d){
       return y(d.height);
     })
