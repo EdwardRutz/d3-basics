@@ -1,10 +1,10 @@
 /*
-* /main.js
-* Data Visualization with D3.js
+* Circles representing data in a ages.csv
+*
 */
 
-// Circles representing data in a csv
-d3.csv("data/ages.csv").then(function(data){
+
+d3.json("data/ages.json").then(function(data){
   data.forEach((d) => {
     d.age = +d.age;
   });
